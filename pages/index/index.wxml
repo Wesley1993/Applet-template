@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class='welcome' wx:if='{{showLoadFail}}'>
+  <image mode='widthFix' src='https://cxtimg.bunnymaicai.com/wechat/login/login_bg02.png'></image>
+  <button disabled='{{showLoading}}' bindtap='reLogin' loading='{{showLoading}}'>重新登录</button>
+</view>
+<view class='launch' wx:else>
+  <image src="https://cxtimg.bunnymaicai.com/wechat/login/login_bg02.png" mode="widthFix"></image>
+</view>
