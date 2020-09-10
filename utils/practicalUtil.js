@@ -90,7 +90,13 @@ class PracticalUtil {
     return copy
   }
 
-
+  /**
+   * 根据经纬度计算距离
+   * @param {*} lat1 
+   * @param {*} lng1 
+   * @param {*} lat2 
+   * @param {*} lng2 
+   */
   calculateDistance(lat1, lng1, lat2, lng2) {
     var radLat1 = lat1 * Math.PI / 180.0;
     var radLat2 = lat2 * Math.PI / 180.0;
@@ -159,9 +165,13 @@ class PracticalUtil {
   }
 
 
-  //校验手机号
+  /**
+   * 校验手机号码
+   * tips: 记得更新
+   * @param {*} mobile 
+   */
   checkMobile(mobile) {
-    let TEL_REGEXP = /^1([35689][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
+    let TEL_REGEXP = /^1([356789][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
     if (TEL_REGEXP.test(mobile)) {
       return true
     }

@@ -20,9 +20,4 @@
  /**
   * 用户基础信息
   */
- const userInfoUrl = '/getWeAppletUserInfo';
-
-
- export {
-   userInfoUrl
- }
+ export const userInfoUrl = '/getWeAppletUserInfo';

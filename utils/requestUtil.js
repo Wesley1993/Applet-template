@@ -15,7 +15,7 @@ class RequestUtil {
   //网络请求 请求头
   header = {
     'Content-Type':'application/json',
-    'channelType':'wechat',//渠道参数，如不需要可以忽略
+    'channelType':'miniprogram',//渠道参数，如不需要可以忽略
   }
 
   /**
